@@ -107,6 +107,7 @@ margin-bottom: 0;
     .abierto{
         transform: translateX(0);
         bottom: 0;
+        z-index: 999;
     }
     .navbar-links {
         font-size: 5vw;
