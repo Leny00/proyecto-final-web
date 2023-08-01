@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #eee;
+}
+.formulario{
+    background-color: #A26A42;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.formulario h2{
+    text-align: center;
+}
+.form-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-btn{
+    background-color: #5c3417;
+    color: #fff;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: transparent;
+    position: relative;
+    overflow: hidden;
+}
+.form-btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3000px;
+    width: 480%;
+    background: #d09f6a;
+    border-radius: 10px;
+    /* transform: translate(-50%, 0%) rotate(45deg); */
+    transform: translateX(-50%) translateY(-105%) rotate(45deg);
+    transition: transform 0.8s ease-in-out;
+    border-radius: 10px;
+}
+.form-btn:hover::before{
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+.form-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 285px;
+    justify-content: center;
+    align-items: center;
+    background: #A26A42;
+    text-align: center;
+    gap: 20px;
+    color: #eee;
+}
+
+.footer-logo {
+    width: 64px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 0 60px;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    text-transform: uppercase;
+    margin: 0 20px 0 20px;
+}
+
+.footer-copy {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9DBE1;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    footer {
+        height: 500px;
+        position: relative;
+    }
+
+    .footer-logo {
+        width: 80px;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .footer-links {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .footer-copy {
+        color: #D9DBE1;
+        position: sticky;
+        bottom: 0;
+    }
+}

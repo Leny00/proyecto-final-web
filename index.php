@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
     <title>StoryScape</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-<header>
+  <header>
     <nav class="navbar-n">
         <img src="assets/img/logo.webp" alt="logo">
             <div class="menu" id="menu">
                 <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
             </div>
             <ul class="navbar-list" id="navbar-list">
-                <li class="navbar-items"><a href="" class="navbar-links">Inicio</a></li>
-                <li class="navbar-items"><a href="" class="navbar-links">Autores</a></li>
-                <li class="navbar-items"><a href="" class="navbar-links">Contacto</a></li>
+            <li class="navbar-items"><a href="index.php" class="navbar-links">Inicio</a></li>
+                <li class="navbar-items"><a href="libros.php" class="navbar-links">Libros</a></li>
+                <li class="navbar-items"><a href="autor.php" class="navbar-links">Autores</a></li>
+                <li class="navbar-items"><a href="contacto.php" class="navbar-links">Contacto</a></li></li>
             </ul>
     </nav>
 </header>
@@ -71,17 +75,13 @@
     </div>
 </section>
 <footer>
-<div class="footer-elements">
 <img class="footer-logo" src="assets/img/logo.webp" alt="">
-<div class="footer-l">
     <ul class="footer-list">
         <li class="footer-items"><a href="" class="footer-links">Inicio</a></li>
         <li class="footer-items"><a href="" class="footer-links">Autores</a></li>
         <li class="footer-items"><a href="" class="footer-links">Contacto</a></li>
     </ul>
-</div>
 <h4 class="footer-copy">Leny Alejandro Garcia Mercedes</h4>
-</div>
 </footer>
 <script src="https://kit.fontawesome.com/e8a9d64781.js" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
@@ -90,3 +90,16 @@
 
 </body>
 </html>
+<?php
+$user="root";
+$pass="";
+$host="localhost";
+$conexion=mysqli_connect($host,$user,$pass);
+if(!$conexion) 
+        {
+            echo "No se ha podido conectar con el servidor".mysql_error();
+        }
+  else
+        {
+            echo "Hemos conectado al servidor <br>";
+        }
