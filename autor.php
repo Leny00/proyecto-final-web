@@ -6,7 +6,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
   <meta http-equiv="Pragma" content="no-cache">
     <title>StoryScape</title>
-    <link rel="stylesheet" href="assets/css/libros.css">
+    <link rel="stylesheet" href="assets/css/autores.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
@@ -26,67 +26,13 @@
             </ul>
     </nav>
 </header>
-<section class="books-container">
-    <div class="books">
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-      </div>
-    </div></div>
+<section class="autor-container">
+    <div class="autores">
+        <?php
+        include("assets/elements/obtener_autores.php");
+        ?>
     </div>
 </section>
-
 <footer>
 <img class="footer-logo" src="assets/img/logo.webp" alt="">
     <ul class="footer-list">

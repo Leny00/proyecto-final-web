@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/libros.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header>
@@ -42,113 +42,35 @@
                 </div>
                 <div class="filtro-opciones">
                     <div>
-                        <input class="f-check" type="checkbox" name="business" id="f-check" onclick="clickcheck(this)" onclick="ob()">
+                        <input class="f-check" type="checkbox" name="business" id="f-check" onclick="clickcheckandob(this)">
                     <label for="fiction">Negocios</label>
                     </div>
                     <div>
-                        <input class="f-check" type="checkbox" name="mod_cook" id="f-check" onclick="clickcheck(this)">
+                        <input class="f-check" type="checkbox" name="mod_cook" id="f-check" onclick="clickcheckandob(this)">
                     <label for="fiction">Cocina Moderna</label>
                     </div>
                     <div>
-                        <input class="f-check" type="checkbox" name="popular_comp" id="f-check" onclick="clickcheck(this)">
+                        <input class="f-check" type="checkbox" name="popular_comp" id="f-check" onclick="clickcheckandob(this)">
                     <label for="fiction">Computacion opular</label>
                     </div>
                     <div>
-                        <input class="f-check" type="checkbox" name="psychology" id="f-check" onclick="clickcheck(this)">
+                        <input class="f-check" type="checkbox" name="psychology" id="f-check" onclick="clickcheckandob(this)">
                     <label for="fiction">Psicologia</label>
                     </div>
                     <div>
-                        <input class="f-check" type="checkbox" name="trad_cook" id="f-check" onclick="clickcheck(this)">
+                        <input class="f-check" type="checkbox" name="trad_cook" id="f-check" onclick="clickcheckandob(this)">
                     <label for="fiction">Cocina Tradicional</label>
                     </div>
                 </div>
             </div>
             
         </div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    <div class="elemento">
-        <div class="card" style="width: 18rem;">
-      <img src="assets/img/harry-potter.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Harry Potter y la piedra filosofal</p>
-        <i class="fa-regular fa-star fa-2xl" style="color: #ffffff;"></i>
-      </div>
-      <p class="card-text autor">J.K. Rowlin</p>
-    </div></div>
-    </div>
+    <?php
+    include("assets/elements/obtener_libros.php");
+    ?>
+    
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <footer>
 <img class="footer-logo" src="assets/img/logo.webp" alt="">

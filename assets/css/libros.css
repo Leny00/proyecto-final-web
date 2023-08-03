@@ -32,30 +32,78 @@ body {
     color: white !important;
     border: none;
     border-radius: 10px;
-    max-width: 100%;
-}
-.card-img-top{
-    height: 10%;
-}
+    max-width: 100%;}
+
 .card-body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 0 !important;
 }
-.card-text{
+.card-top{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img-top{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.libro:hover{
+transform: scale(1.2);
+}
+.card-title{
     margin: 0;
+    text-align: left;
+    font-size: 24px;
+    color: #d09f6a !important;
+}
+.description{
     text-align: start;
+    margin: 35px 0 35px 0;
+}
+.card-price{
+    font-size: 28px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.card-price span{
     font-size: 16px;
-    padding: 0 10px 0 0;
-    font-weight: bold;
-    padding-right: 60px;
+    position: absolute;
+    left: 0;
+    color: #eeeeee77;
 }
-.autor{
-font-weight: normal;
-font-size: 14px;
+.card-price b{
+    padding-left: 20px;
 }
-
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    position: relative;
+    border-top: none !important;
+}
+.card-type{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+.card-date{
+    font-size: 16px;
+    color: #eeeeee80;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 .buscar{
   display: flex;
   justify-content: center;

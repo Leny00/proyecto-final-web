@@ -90,16 +90,3 @@
 
 </body>
 </html>
-<?php
-$user="root";
-$pass="";
-$host="localhost";
-$conexion=mysqli_connect($host,$user,$pass);
-if(!$conexion) 
-        {
-            echo "No se ha podido conectar con el servidor".mysql_error();
-        }
-  else
-        {
-            echo "Hemos conectado al servidor <br>";
-        }

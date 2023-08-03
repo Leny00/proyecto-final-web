@@ -29,7 +29,7 @@
 <main class="form-container">
         <div class="formulario">
             <h2>CONTACTO</h2>
-            <form action="" method="post">
+            <form action="assets/elements/infocontacto.php" method="post" id="form_insert">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
                     <label for="correo">Correo</label>

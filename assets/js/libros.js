@@ -3,7 +3,12 @@ input.addEventListener("keyup", (event) =>{
     console.log(event);
 });
 function ob() {
-    const checkbox=document.getElementById("f-check").name;
-    alert(checkbox)
+    const checkboxesname = document.querySelectorAll(".f-check");
+    checkboxesname.forEach(checkbox => {
+        console.log(checkbox.name);
+    });
 }
-
+function clickcheckandob(element) {
+    clickcheck (element);
+    ob();
+}
